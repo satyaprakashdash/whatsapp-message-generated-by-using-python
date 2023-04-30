@@ -1,0 +1,14 @@
+import pywhatkit
+#importing the module
+from datetime import datetime
+#use datetime module
+now=datetime.now()
+chour=now.strftime("%H")
+#take variable
+mobile=input('enter a reciver mobile number:')
+#take a reciver mobile number with country code
+message=input('write a message:')
+hour=int(input('enter hour:'))
+minute=int(input('enter minute:'))
+pywhatkit.sendwhatmsg(mobile,message,hour,minute)
+#from pywhatkit module use sendwhatmsg function
